@@ -185,31 +185,28 @@ body:before {
 }
 
 .overview .wrapper {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+    display: flex;
     height: 100%;
-    grid-gap: 22px;
 }
 
 .overview .wrapper .side-left {
     display: flex;
     flex-direction: column;
+    width: 70%;
     grid-gap: 22px;
 }
 
 .overview .wrapper .side-left .left-top {
-    flex: 2;
-}
-
-.overview .wrapper .side-left .left-bottom {
-    flex: 1;
 }
 
 .overview .wrapper .side-left .left-top,
 .overview .wrapper .side-left .left-bottom {
     height: 100%;
     border-radius: 14px;
-    padding: 22px;
+}
+
+h3 {
+    padding: 22px 22px 0 22px;
 }
 
 .overview .wrapper .side-left, .overview .wrapper .side-right {
@@ -218,6 +215,8 @@ body:before {
 }
 
 .overview .wrapper .side-right {
+    width: 30%;
+    margin-left: 22px;
 }
 
 .overview .noise {
@@ -235,12 +234,14 @@ body:before {
 }
 
 .courses-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    overflow-x: scroll;
+    /* padding: 0 22px 22px; */
 }
 
 .courses-list .item {
-    margin: 0 15px 15px 0;
     padding: 6px;
     display: flex;
     flex-direction: column;
@@ -260,8 +261,9 @@ body:before {
 }
 
 .courses-list .item .description .title {
-    font-size: 17px;
+    font-size: 18px;
     font-family: "Roboto Slab";
+    font-weight: 600;
 }
 
 .courses-list .item .description .text {
@@ -272,6 +274,24 @@ body:before {
 }
 
 .courses-list .item .description .price {
-    font-size: 12px;
+    font-size: 14px;
     font-family: "Roboto Slab";
+    font-weight: 600;
+}
+
+.teacher-list {
+    display: grid;
+    grid-gap: 15px;
+    overflow-x: scroll;
+    /* padding: 0 22px 22px; */
+}
+
+.teacher-list .item {
+    width: 168px;
+    height: 230px;
+    background-image: url("https://images.unsplash.com/photo-1648737966614-55e58b5e3caf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80");
+}
+
+.overview .wrapper .left-top {
+
 }
