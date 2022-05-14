@@ -218,6 +218,67 @@ h3 {
     margin-left: 22px;
 }
 
+.overview .wrapper .side-right {
+    padding: 30px;
+    text-align: center;
+}
+
+.overview .wrapper .side-right .info h1 {
+    margin-right: 7px;
+    margin-bottom: 0;
+}
+
+.overview .wrapper .side-right .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 22px 0 0;
+    grid-gap: 30px;
+}
+
+.overview .wrapper .side-right .teacher img {
+    width: 107px;
+    height: 107px;
+    border-radius: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.overview .wrapper .side-right .teacher h2 {
+    margin-top: 0;
+}
+
+.overview .wrapper .side-right .line {
+    background-color: #7486A1;
+    margin: 27px 0;
+}
+
+.overview .wrapper .side-right .info div {
+    display: flex;
+    align-items: center;
+}
+
+.overview .wrapper .side-right p {
+    color: #7486A1;
+}
+
+.overview .wrapper .side-right h2 {
+    margin: 27px 0 15px;
+}
+
+.overview .wrapper .side-right .line {
+    height: 1px;
+    background-color: #7486A1;
+    width: 100%;
+    margin: 27px 0;
+}
+
+.overview .wrapper .side-right .preview {
+    width: 100%;
+    border-radius: 14px;
+}
+
 .overview .noise {
     box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
     background: none;
