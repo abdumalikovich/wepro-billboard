@@ -85,7 +85,6 @@ body {
 h3 {
     color: #7486A1;
     font-size: 12px;
-    margin-bottom: 15px;
     font-weight: 500;
 }
 
@@ -206,7 +205,7 @@ body:before {
 }
 
 h3 {
-    padding: 22px 22px 0 22px;
+    padding: 15px;
 }
 
 .overview .wrapper .side-left, .overview .wrapper .side-right {
@@ -236,18 +235,22 @@ h3 {
 .courses-list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 15px;
     overflow-x: scroll;
-    /* padding: 0 22px 22px; */
+}
+
+.courses-list a {
+    margin-bottom: 12px;
 }
 
 .courses-list .item {
+    margin: 0 7.5px 0 7.5px;
     padding: 6px;
     display: flex;
     flex-direction: column;
     width: 245px;
     background-color: #fff;
     border-radius: 8px;
+    height: 100%;
 }
 
 .courses-list .item .preview {
@@ -258,6 +261,10 @@ h3 {
 
 .courses-list .item .description {
     padding: 18px 12px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .courses-list .item .description .title {
@@ -268,7 +275,7 @@ h3 {
 
 .courses-list .item .description .text {
     display: block;
-    margin: 7px 0 19px;
+    margin: 6px 0;
     font-size: 13px;
     color: #7486A1;
 }
@@ -281,15 +288,41 @@ h3 {
 
 .teacher-list {
     display: grid;
-    grid-gap: 15px;
+    grid-template-columns: repeat(100, 1fr);
     overflow-x: scroll;
-    /* padding: 0 22px 22px; */
+}
+
+.teacher-list .item h3 {
+    padding-bottom: 10px;
+    color: #fff;
+    z-index: 1;
+}
+
+.teacher-list .item:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0, #10162F, rgba(16, 22, 47, 0), rgba(255, 255, 255, 0));
+    z-index: 0;
 }
 
 .teacher-list .item {
+    display: inline-block;
+    position: relative;
+    margin: 0 7.5px 15px 7.5px;
     width: 168px;
     height: 230px;
     background-image: url("https://images.unsplash.com/photo-1648737966614-55e58b5e3caf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
 }
 
 .overview .wrapper .left-top {
