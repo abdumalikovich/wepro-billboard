@@ -379,6 +379,7 @@ h3 {
     background-image: url("https://images.unsplash.com/photo-1648737966614-55e58b5e3caf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     border-radius: 14px;
     display: flex;
     justify-content: center;

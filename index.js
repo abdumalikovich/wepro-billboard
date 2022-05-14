@@ -10,7 +10,7 @@ const SHOW_TEACHERS = () => {
 
     for(let item of teachers) {
         place.innerHTML += `
-            <div class="item">
+            <div class="item" style="background-image: url(${item.avatar_url})">
                 <h3>${ item.name }</h3>
             </div>
         `
